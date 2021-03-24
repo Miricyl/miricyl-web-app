@@ -40,6 +40,7 @@ const createOrgObjects = (orgAndServicesObjects) => {
       PhoneNo: object.OrgPhoneNumber,
       Address: object.OrgAddress,
       OrgPriority: object.OrgPriority,
+      IsEmergencyService: object.EmergencyService === 'Y'
     };
   });
 };
