@@ -21,7 +21,7 @@ ${NUMBERS}          123456789
 ${ALPHANUMERIC}     ${LETTERS}${NUMBERS}
 
 
-${DEVURL} =  __url__
+${DEVURL} =  http://localhost:3001/
 ${TSTURL} =
 ${LIVE} =
 
