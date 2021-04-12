@@ -36,11 +36,11 @@ Prompt for the question in personalise page
 Personalisation options are present
     [Documentation]  Checks if all the personalisation options are present
     sleep  1s
-    element should be visible  id:Child(Under-18)
-    element text should be   id:Child(Under-18)  Child(Under 18)
+    element should be visible  id:Under-18
+    element text should be   id:Under-18  Under 18
 
-    element should be visible  id:18+
-    element text should be   id:18+  18+
+    element should be visible  id:Over-18
+    element text should be   id:Over-18  Over 18
 
     element should be visible  id:A-student
     element text should be   id:A-student  A student
@@ -67,12 +67,12 @@ Select all personalisation options
     Select 'Unemployed'
     Select 'BAME'
 
-Select 'Child(Under-18)'
-    click element  id:Child(Under-18)
+Select 'Under 18'
+    click element  id:Under-18
     sleep  1s
 
-Select '18+'
-    click element  id:18+
+Select 'Over 18'
+    click element  id:Over-18
     sleep  1s
 
 Select 'A student'
