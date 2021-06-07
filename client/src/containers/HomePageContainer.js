@@ -13,8 +13,6 @@ const HomePageContainer = ({ history }) => {
   const [supportTypes, setSupportTypes] = useState([]);
   const [personalisations, setPersonalisations] = useState([]);
 
-  const [helpMode, setHelpMode] = useState(false);
-
   const [charities, setCharities] = useState([]);
 
   const [postcode, setPostcode] = useState("");
@@ -197,8 +195,7 @@ const HomePageContainer = ({ history }) => {
   };
 
   const handleHelpButtonPressed = () => {
-    setHelpMode(true);
-    history.push("/results");
+    history.push("/help-now");
   };
 
   return (
@@ -211,7 +208,6 @@ const HomePageContainer = ({ history }) => {
       >
         <NavBar
           onHelpButtonPressed={handleHelpButtonPressed}
-          showHelpButton={!helpMode}
         />
         <Switch>
           <Route exact path="/">
@@ -262,7 +258,22 @@ const HomePageContainer = ({ history }) => {
               onToggleSupportTypeSelected={onToggleSupportTypeSelected}
               onTogglePersonalisationSelected={onTogglePersonalisationSelected}
               onClearAllUserSelections={clearAllUserSelections}
-              isHelpMode={helpMode}
+              isHelpMode={false}
+            />
+          </Route>
+          <Route exact path="/help-now">
+            <Results
+              onBackClicked={onBackClicked}
+              needs={needs}
+              supportTypes={supportTypes}
+              personalisations={personalisations}
+              postcode={postcode}
+              charities={charities}
+              onToggleNeedSelected={onToggleNeedSelected}
+              onToggleSupportTypeSelected={onToggleSupportTypeSelected}
+              onTogglePersonalisationSelected={onTogglePersonalisationSelected}
+              onClearAllUserSelections={clearAllUserSelections}
+              isHelpMode={true}
             />
           </Route>
         </Switch>

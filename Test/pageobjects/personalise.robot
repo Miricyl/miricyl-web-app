@@ -36,17 +36,17 @@ Prompt for the question in personalise page
 Personalisation options are present
     [Documentation]  Checks if all the personalisation options are present
     sleep  1s
-    element should be visible  id:Child(Under-18)
-    element text should be   id:Child(Under-18)  Child(Under 18)
+    element should be visible  id:Under-18
+    element text should be   id:Under-18  Under 18
 
-    element should be visible  id:18+
-    element text should be   id:18+  18+
+    element should be visible  id:Over-18
+    element text should be   id:Over-18  Over 18
 
     element should be visible  id:A-student
     element text should be   id:A-student  A student
 
-    element should be visible  id:A-parent
-    element text should be   id:A-parent  A parent
+    element should be visible  id:A-parent-or-carer
+    element text should be   id:A-parent-or-carer  A parent or carer
 
     element should be visible  id:LGBTQ+
     element text should be   id:LGBTQ+  LGBTQ+
@@ -54,37 +54,33 @@ Personalisation options are present
     element should be visible  id:Unemployed
     element text should be   id:Unemployed  Unemployed
 
-    element should be visible  id:A-carer
-    element text should be   id:A-carer  A carer
-
     element should be visible  id:BAME
     element text should be   id:BAME  BAME
 
 Select all personalisation options
     [Documentation]  Selects all options from the persoanlisation question
-    Select 'Child(Under-18)'
-    Select '18+'
+    Select 'Under 18'
+    Select 'Over 18'
     Select 'A student'
-    Select 'A parent'
+    Select 'A parent or carer'
     Select 'LGBTQ+'
     Select 'Unemployed'
-    Select 'A carer'
     Select 'BAME'
 
-Select 'Child(Under-18)'
-    click element  id:Child(Under-18)
+Select 'Under 18'
+    click element  id:Under-18
     sleep  1s
 
-Select '18+'
-    click element  id:18+
+Select 'Over 18'
+    click element  id:Over-18
     sleep  1s
 
 Select 'A student'
     click element  id:A-student
     sleep  1s
 
-Select 'A parent'
-    click element  id:A-parent
+Select 'A parent or carer'
+    click element  id:A-parent-or-carer
     sleep  1s
 
 Select 'LGBTQ+'
@@ -93,10 +89,6 @@ Select 'LGBTQ+'
 
 Select 'Unemployed'
     click element  id:Unemployed
-    sleep  1s
-
-Select 'A carer'
-    click element  id:A-carer
     sleep  1s
 
 Select 'BAME'

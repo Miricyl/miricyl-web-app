@@ -137,6 +137,11 @@ ZA-Future Need
     element should be visible  id:ZA-Future Need
     element text should be  id:ZA-Future Need  ZA-Future Need
 
+Click on the help now button
+    [Documentation]  Clicks on the Help Now! button
+    element text should be  id:help-button  Help Now!
+    click element  id:help-button
+    sleep  3s
 
 Click on the next button
     [Documentation]  Clicks on the next button on the page
