@@ -114,11 +114,11 @@ Insert into Miricyl.Type
 Values(114, 'Online support by Video', 'Telephone or zoom');
 
 Insert into Miricyl.Personalisation
-Values(101, 'Under 16', 'Child(Under 18)');
+Values(101, 'Under 16', 'Under 18');
 Insert into Miricyl.Personalisation
-Values(102, '16+', 'Child(Under 18)');
+Values(102, '16+', 'Under 18');
 Insert into Miricyl.Personalisation
-Values(103, '18+', '18+');
+Values(103, '18+', 'Over 18');
 Insert into Miricyl.Personalisation
 Values(104, 'A student', 'A student');
 Insert into Miricyl.Personalisation
