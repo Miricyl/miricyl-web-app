@@ -43,15 +43,16 @@
   font-family: "clone-rounded-latin", sans-serif;
   color: #2e3192;
   text-align: center;
-  padding: 7px 13px 11px 14px;
+  padding: 7px 12px 9px 12px;
   border-radius: 26.5px;
   border: solid 2px #2e3192;
   background-color: transparent;
   font-size: 24px;
   letter-spacing: 0.64px;
-  height: 53px;
+  height: auto;
   justify-self: right;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .question-container {
