@@ -8,7 +8,7 @@ const MailchimpFormContainer = props => {
     const u = process.env.REACT_APP_MAILCHIMP_U;
     const id = process.env.REACT_APP_MAILCHIMP_ID;
     const postUrl = url +'/subscribe/post?u='+ u +'&id='+ id;
-
+    
     return (
         <div className="mc__form-container">
             <MailchimpSubscribe
