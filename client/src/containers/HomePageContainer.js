@@ -3,6 +3,7 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import nodeServer from "../api/nodeServer";
 import MultiChoiceQuestion from "../components/MultiChoiceQuestion";
 import NavBar from "../components/Navbar";
+import MailchimpFormContainer from "../components/MailchimpFormContainer";
 
 import Results from "../components/Results/Results";
 import { getAppInsights } from "../telemetry/TelemetryService";
@@ -217,6 +218,7 @@ const HomePageContainer = ({ history }) => {
               onComplete={handleNeedsCompleted}
               questionTitle="What can we help you with?"
             />
+            <MailchimpFormContainer />
           </Route>
           <Route exact path="/service-types">
             <MultiChoiceQuestion

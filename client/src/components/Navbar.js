@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Logo from "../assets/BoostLogo.png";
 
 const NavBar = ({ showHelpButton = true, onHelpButtonPressed }) => {
+  const donateButton = 'https://www.miricyl.org/donate/';
   return (
     <>
       <div className="navbar-container">
@@ -20,7 +21,7 @@ const NavBar = ({ showHelpButton = true, onHelpButtonPressed }) => {
 
           </div>
 
-          {showHelpButton && (
+          {/* showHelpButton && (
             <button
               className="help-button"
               id="help-button"
@@ -28,7 +29,8 @@ const NavBar = ({ showHelpButton = true, onHelpButtonPressed }) => {
             >
               Help Now!
             </button>
-          )}
+          ) */}
+           <a href={donateButton} className="help-button" id="help-button" target="_blank">Help Now!</a>
         </div>
       </div>
     </>
